@@ -2,8 +2,9 @@ import React, { useRef, useState } from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.min.css';
 import 'owl.carousel/dist/assets/owl.theme.default.min.css';
+import './Cards.css';
 
-const GameSection = () => {
+const Cards = () => {
   const carouselRef = useRef(null);
   const [activeItem, setActiveItem] = useState(0);
 

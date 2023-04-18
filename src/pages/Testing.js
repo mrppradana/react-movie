@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import "./Testing.css";
+import "./Menu.css";
+import Carousel from "./carousel";
+import Cards from "./Cards";
 
-const Navbar = () => {
+const Menu = () => {
   const toggleMenu = () => document.body.classList.toggle("open");
   return (
     <>
@@ -23,6 +25,9 @@ function Home() {
   return (
     <section className="home">
       <div className="text">Series</div>
+      <div class="alert alert-success" role="alert">
+        Checkout Our New Series!
+      </div>
     </section>
   );
 }
@@ -30,8 +35,10 @@ function Home() {
 function App() {
   return (
     <>
-      <Navbar />
+      <Menu />
       <Home />
+      <Carousel />
+      <Cards />
     </>
   );
 }
